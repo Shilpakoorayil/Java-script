@@ -1,0 +1,17 @@
+Primitive :
+
+
+1> String: ''," " ,
+2> Number: 8281.8281,890,990
+3> Boolean : Either true or false
+4> NULL : Absence of values
+5> Undefined : variable that has been declared but not assigned a value.
+6> Symbol : Unique immutable values (used mostly with object property keys)
+7> BigInt : Work with very large numbers
+
+Non-Primitive :
+1> Mutable(Can changecd)
+2> Array Structure
+3> 
+
+
