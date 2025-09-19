@@ -1,5 +1,5 @@
 Primitive :
-
+single input Structure
 
 1> String: ''," " ,
 2> Number: 8281.8281,890,990
@@ -13,5 +13,10 @@ Non-Primitive :
 1> Mutable(Can changecd)
 2> Array Structure
 3> 
+
+operators
+
+symbols or key operation
+
 
 

@@ -1,0 +1,8 @@
+ARRAY:
+------
+> Array is a data structure used to store multiple values in a single way.
+>VAR A= [1,2,3,4,5,6,7,8,9]
+>Either string or numbers are stored in Array
+> Array Object: Cn Store both  strings and numbers
+
+>Primitive type: var a=123;
