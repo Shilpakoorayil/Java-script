@@ -1,0 +1,24 @@
+
+
+
+//.................................  1.  .............................
+
+// const getGreeting = (name) => {
+//   const message = `Hello, ${name}!`; // First line of logic
+//   return message; // Returning a string
+// };
+// console.log (getGreeting(" Shilpa KOORAYIL"));
+
+
+// const getPerson = (a, b) => {
+//   const result = a + b;
+//   console.log(result);
+  
+//   return result;
+// }
+
+// getPerson(3,5)
+
+const getNmuber=(a,b,c) => {
+
+}

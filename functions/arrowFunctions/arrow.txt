@@ -1,0 +1,26 @@
+Arrow Function :
+
+
+Shorter syntax for creating function in javascript
+Introduced in ES6  ECMASCRIPT 
+
+Regular Function :
+ 
+ function add (a,b){
+    return a+b
+
+ }
+ add(1,2)
+
+ Arror Function:
+ Not Hoisted
+
+ const add = (a,b)    =>     a+b;
+ add (1,2)
+
+ ...............................
+ home work
+ Multi line functions and then return the value
+ 
+
+ 

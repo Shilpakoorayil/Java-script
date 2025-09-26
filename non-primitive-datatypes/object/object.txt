@@ -1,0 +1,19 @@
+...........................................................................
+                 OBJECT     
+
+                 We can store multiple values in a single array.
+                 use curly brackets
+
+
+                 ...............................................................
+                 ..............................................................
+                 OBJECT -METHOD
+                 > You can store function inside object that are called object method
+
+                 > Key values are separted ny using COMMAS
+
+                 > this : key word  > It refers the object itself.
+                 > It is used to access the properties and methods
+
+
+                 ..........................................................

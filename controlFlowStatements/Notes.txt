@@ -1,0 +1,43 @@
+  
+                                      NOTES
+ 
+  1.conditional statements: In order to control the statements
+    *if else
+    *else if
+    *ifelse-ifelse
+    *switch
+    It will act as a dynamic behaviour.
+
+  2.Loop : Same block of code which runs multiple times .
+         1. for loop
+             for(initialisation;Condition;increment/decrement){
+                  BLOCK OF CODES
+                   }
+
+
+  3.Switch
+    Useful when comparing a single value against mutiple exact matches
+
+ 
+ 4. While
+   Loop as a block of code as long as the condition is true.
+
+5. Do While :
+   * First execute and then check the condition.
+   * EXECUTE the block once and then repeats as long as the condition is true.
+
+
+   6. Nested Loops : 
+                      
+................................................................................................
+    npm i prompt syn 
+    enter
+    if error
+    go to command prompt
+.........................
+
+........................
+windows
+powershell'
+run as  administrators
+.........................

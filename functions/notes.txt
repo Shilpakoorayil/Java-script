@@ -1,0 +1,88 @@
+  
+    .................................FUNCTION    NOTES ,..............................................
+
+
+    FUNCTION :
+    1> A block of codes designed to perform a particular tasks.
+    2> We can defined function on different ways.
+
+        * Function declarations,
+        * Function Expressions,
+        * Arrow Functions,
+        * Contact Functions,
+        * Anonymous Function,
+        * IIFE (Immediately invoked Function Expressions)
+        * Predefined Function (Building Functions) : Predefined functions are functions that are already provided by javascript.
+                                                   : They are ready to use.
+
+                                                  * String Functions
+                                                  * Date Function,
+                                                  * Math Function.
+    .............................................................................................................
+
+[A ]: Function Declarations: 
+
+     Syntax:
+                function_functionName(){
+                           block of codes [Function body]
+                 }    
+(): parentieses      , parameters are passed in this 
+console is used for debugging 
+parameters actuals values called as arguments      
+
+Features:
+..........
+1> HOISTING : You can call the function before it is defined in the call.
+2> Named Function : Function declarations  must have a name.
+3> Global or local scope : 
+Globally Scoped : if defined outside any block, it is globally scoped.
+Locally Scopedc : if inside a block it is locally scoped
+........................................................................
+
+...............................
+[B ] : Function Expressions :
+...............................
+It  is a way to defined the function inside an expression and assigned into a  variable.
+
+
+Syntax:   
+ const sayHello =function(){
+   console.log("HI")
+ }
+sayHello()
+
+Features:
+1>Anonymous or named.
+2> Not Hoisted : You cannot call the function before its defintion(definning it)
+3> Can be used as argument.
+4> Can assigned to variable or objects.
+
+.............................................................................
+[C ] Arrow Functions:
+1> NOt Hoisted
+............................................................................
+Call back Function:
+
+1> They are functions that are passed as arguments to the functions.
+2> In order to handle asynchronous operations.
+3> Avoid blocking and code executions.
+
+[hint: synchronous means line by line executions]
+
+//........................................................................
+IIFE:
+key features:
+1> Immediately invoked.
+2> Data Privay
+3> Variable defined inside iife are not accessible outside.
+4> Closure
+5> Self Container : independently executes , without effecting surrounding codes.
+//,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+
+
+
+
+
+
+ 

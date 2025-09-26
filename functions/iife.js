@@ -1,0 +1,6 @@
+//An Immediately Invoked Function Expression (IIFE) 
+//...................................................
+// In JavaScript is a function that is defined and executed immediately after its creation. 
+// It is a common pattern  used to create a private scope for variables, preventing them from
+//  polluting the global scope. 
+//...........................................................................................................
