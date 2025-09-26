@@ -4,3 +4,9 @@
 // It is a common pattern  used to create a private scope for variables, preventing them from
 //  polluting the global scope. 
 //...........................................................................................................
+
+
+(function(){
+    console.log("I will invoked immediately");
+    
+})();

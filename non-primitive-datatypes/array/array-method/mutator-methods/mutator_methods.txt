@@ -1,0 +1,35 @@
+                
+
+                                ARRAY-METHODS NOTES
+
+   [1] Mutator Method    :
+  > Mutator methods are functions that modify the original data structure
+    (like an array or object) .
+
+  > [we can change the orginal array.]
+  //..........................................................................
+  Common Mutator methods:
+   
+  [1] push(): Adds one or more elements to the end of an array and returns the new length.
+  [2] pop() :  Removes the last element from an array and returns that element.
+  [3] Shift(): Removes the first element from an array and returns that element.
+  [4] unshift(): Adds one or more elements to the beginning of an array and returns the new length.
+  [5] splice():  Can add, remove, or replace elements at a specific index within an array.
+                 It returns an array containing the deleted elements.
+
+                  HINT: ----> [Unlike slice , splice ,modifies the orginal array]
+                   syntax: ---> splic(startIndex,deleteIndex,Item1,Item2)
+
+  [6].sort(): Sorts the elements of an array in place and returns the sorted array.
+  [7]reverse(): Reverses the order of the elements in an array in place and returns the reversed array.
+  [8]fill(): Fills all the elements of an array from a start index to an end index with a static value.
+
+  fills all part of ann array with static value
+
+....................................................................
+  HOME WORKS:
+
+
+1.copyWithin
+f2.latMap
+.....................................................................

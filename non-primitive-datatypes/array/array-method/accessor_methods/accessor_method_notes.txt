@@ -1,0 +1,28 @@
+ ............................  ACCESOR METHODS NOTES .....................................
+
+
+
+
+ 
+[1]concat()
+ > Merge two or more arrayS and returN a new array
+ > Doesnt modify the orginal array.
+
+[2]Includes()
+ > check if the arrays contain specify values. 
+ >  Return true or false.
+
+ [3]indexof()
+ > returns the first index where a value is found.
+ > return -1 if not found.
+
+ [4] lastindexOf()
+ >> returns the last index where a value is found.
+
+ [5]JOIN()
+ > combines all elements of a array into a string.
+ >separted by a specified separtor
+
+ [6]slice()
+ > Returns a shallow copy of a porton of an array.
+ >

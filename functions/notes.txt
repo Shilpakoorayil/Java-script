@@ -69,7 +69,13 @@ Call back Function:
 
 [hint: synchronous means line by line executions]
 
+
+DRAWBACKS:
+
+1. In nested functions it is diffcult to maintain the function and identify the code also.
+2, inorder to over come call back hell we can using promises.
 //........................................................................
+
 IIFE:
 key features:
 1> Immediately invoked.
