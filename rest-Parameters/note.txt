@@ -1,0 +1,17 @@
+we cannot predict the count of arguments which are going to pass,
+Hence such condition we are using this principle 
+
+
+NOTE:
+> REST parameter syntax : (...) alows to acceptan indefinite (infinite) number of arguments.
+
+
+HOME:
+LET creat a function
+FIRST NAME
+LAST NAME
+title : rest parameter
+log : first name, last name
+console.log(`name:{$first name} {$last name}`)
+console.log(title.join(','))
+tile.join

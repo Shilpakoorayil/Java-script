@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="radioName">GENDER :</label>
+        <input type="radio" name="gender" value="male">
+        <input type="radio" name="gender" value="female">
+    </form>
+
+    <script>
+        let radio = document.getElementsByName("gender");
+        console.log(radio);
+        radio.forEach(radio => {
+            console.log(radio.value);
+
+
+        });
+
+    </script>
+</body>
+
+</html>

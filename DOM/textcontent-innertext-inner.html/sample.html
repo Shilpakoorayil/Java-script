@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>innerText vs innerHTML Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    #demo {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    button {
+      margin-right: 10px;
+      padding: 8px 12px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+       border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h2>🔍 Difference between innerText and innerHTML</h2>
+  
+  <div id="demo">
+    <b>Hello</b> <i>World!</i>
+  </div>
+
+  <button onclick="showInnerText()">Show innerText</button>
+  <button onclick="showInnerHTML()">Show innerHTML</button>
+  <button onclick="changeWithInnerText()">Set using innerText</button>
+  <button onclick="changeWithInnerHTML()">Set using innerHTML</button>
+
+  <p id="output"></p>
+
+  <script>
+    const demo = document.getElementById("demo");
+    const output = document.getElementById("output");
+
+    function showInnerText() {
+      output.textContent = "innerText → " + demo.innerText;
+    }
+
+    function showInnerHTML() {
+      output.textContent = "innerHTML → " + demo.innerHTML;
+    }
+
+    function changeWithInnerText() {
+      demo.innerText = "<b>This is bold?</b>";
+      output.textContent = "Used innerText → HTML tags shown as text.";
+    }
+
+    function changeWithInnerHTML() {
+      demo.innerHTML = "<b>This is bold!</b>";
+      output.textContent = "Used innerHTML → HTML tags rendered.";
+    }
+  </script>
+</body>
+</html>

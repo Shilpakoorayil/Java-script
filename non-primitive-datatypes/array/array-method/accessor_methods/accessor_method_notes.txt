@@ -25,4 +25,19 @@
 
  [6]slice()
  > Returns a shallow copy of a porton of an array.
- >
+ 
+
+ [7] at()
+ > Method provides a way to access elements by index  similar to bracket notation ([]),
+ > but with the added benefit of handling negative indices.
+
+[8]
+> Flatterns nested array into a single level array.
+> Depth can be specified.
+
+HOMECWORK 
+ at
+entries
+keys
+values
+toString 

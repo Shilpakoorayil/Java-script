@@ -1,0 +1,11 @@
+
+...................................................................
+Display None  :
+
+> When you want to completely remove an element from the layout.
+....................................................................
+
+Visibility Hidden :
+
+> When you want to hide an element but maintain its layout.
+...................................................................

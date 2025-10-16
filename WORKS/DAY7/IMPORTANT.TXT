@@ -1,0 +1,18 @@
+
+
+MOCK INTERVIEW QUESTION:
+........................
+DIFFERENCE BETWEEN FUNCTION DECLARATION AND FUNCTION EXPRESSION
+Function declaration must name
+expression difference  named/analoym
+arrow function -es6 new feature
+call back function =call back hell  (pyramid of DOOM)
+anonymous function
+IIFE : 
+Building Function :(predefined function)
+Data Types :
+operators: ternary prefeerd most
+loop:
+contitional statment
+break and continue case
+......................................

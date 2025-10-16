@@ -1,0 +1,8 @@
+  features:
+
+  reduce code
+  accuracy
+
+
+HW: 
+[2] Random dics from 1 to 6

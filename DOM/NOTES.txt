@@ -1,0 +1,52 @@
+  NOTES:
+
+
+  DOM:
+  ....
+
+  > Document Object Model :
+  Programming INterface : * Set of tools methods and rules, that allows the s/w to interact with something else,
+                            such a s/m service or documents. eg: TV
+                          * Provided by browsers.
+                          * It allows JS to  interact with and manupulate thestructure,style and content of the webpages.
+                             
+                             
+                             TREE LIKE STRUCTURE;
+                             
+                             
+                                HTML
+
+                         Head         body
+
+                                               div             div
+                                              p      p         p      p 
+
+Inoder to access DOM:  
+getElemntById      : A method to get single element.  
+getElemntByClass   : A method used to select all elments with specific class name.
+getElemntByTagName :  
+getElementByName   :   
+
+QuerySelector      :
+> This method are used to find and interact with HTML elements on web page. 
+> They allow you to dynamically select elements using CSS selctors and manupulate them within JS.
+
+QuerySelectorAll :
+
+create   elements; inorder to create elements.
+remove  element :
+
+
+                     
+
+
+
+
+
+
+
+
+
+
+
+

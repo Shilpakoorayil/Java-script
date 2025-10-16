@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Remove Elements</h2>
+    <p id="myPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui asperiores tenetur eos sapiente. Nemo
+        sed reprehenderit nulla. Obcaecati nobis consectetur provident similique, iure eos ullam vero harum fugiat atque
+        suscipit eveniet minima animi!</p>
+        <button onclick="removePara()" style="height: 100px;width: 100px;">REMOVE paragraph</button>
+
+
+        <script>
+
+            function removePara() {
+                let para = document.getElementById("myPara");
+                para.remove();
+            }
+        </script>
+</body>
+
+</html>

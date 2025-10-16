@@ -1,0 +1,29 @@
+> synchronous: line by line executions.
+
+> Async-await : 
+  * In JS async-await is syntactic sugar built on top of promise.
+  * More readable and maintainable
+  * It makes asynchronous code looks and behaves like synchronous.
+  ..///////////////////////////////////////////////////////////
+
+
+  async function Hello(){
+
+
+
+}
+
+const sayHello =async function(){
+    const dta =await  shilpa ('hello')
+
+
+
+}
+const sayBye = async() => {
+
+}
+
+//asyn marks a function that will return a promise.
+//await : it will pocess the function execution untill a promise is resolved(reject).
+
+

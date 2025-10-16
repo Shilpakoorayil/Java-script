@@ -1,0 +1,2 @@
+Spread out the elements of the array.
+extacting copy of the elements of an array.

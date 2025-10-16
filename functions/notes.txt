@@ -9,7 +9,7 @@
         * Function declarations,
         * Function Expressions,
         * Arrow Functions,
-        * Contact Functions,
+        * Call back Functions,
         * Anonymous Function,
         * IIFE (Immediately invoked Function Expressions)
         * Predefined Function (Building Functions) : Predefined functions are functions that are already provided by javascript.

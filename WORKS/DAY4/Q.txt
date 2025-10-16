@@ -1,0 +1,9 @@
+...................... QUESTIONS ......................................
+Q1: Create an object representing a person  with name, age, and city
+ Q2: Add a new property to an  object
+ Q3: Remove a property from an object
+ Q4:if Statement - Check if a person is an adult
+ Q5:if...else Statement - Find the largest of two numbers
+ Q6:switch Statement - Check month name from number
+ Q7: if...else - Check if a number is divisible by both 3 and 5
+ Q8: Ternary Operator - Find the minimum of two numbers

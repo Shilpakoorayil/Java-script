@@ -26,6 +26,16 @@
 
   fills all part of ann array with static value
 
+  [9]copyWithin()
+
+>syntax: array.copyWithin(target, start, end)
+> target (Required): The zero-based index to which the copied elements are pasted. Negative values are counted from the end of the array.
+> start (Optional): The zero-based index from which to start copying elements. If omitted, it defaults to 0. Negative values are counted from the end.
+> end (Optional): The zero-based index at which to stop copying elements. This element is not included in the copy. If omitted, it copies to the end of the array. Negative values are counted from the end. 
+Examples
+
+[10]flatMap():
+
 ....................................................................
   HOME WORKS:
 

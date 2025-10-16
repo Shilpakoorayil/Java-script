@@ -1,0 +1,4 @@
+                  NOTE 
+
+
+                  > destructuring is a js features that allows you to unpack values of an array for properties from objects in separte variables.

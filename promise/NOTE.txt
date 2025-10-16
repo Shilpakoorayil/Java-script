@@ -1,0 +1,13 @@
+PROMISE :
+
+
+> aSyn/failure.> resp by using promise.
+......................................
+> Promise is an object that represents the eventual complition (or failure) of an asynchrous operation and its resulting values.
+  >Resolve is mainly means value   ;Reject means error
+
+Resolve :
+call when the operation is successfull
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//WORKS:
+1> PROMISE .

@@ -1,0 +1,14 @@
+function Default(name="guest"){
+    console.log("HELLO " + name + "!");
+
+}
+
+Default();
+Default("ShilpaKoorayil");
+
+
+
+
+//HOME
+// NAME ,age
+// object person{person};

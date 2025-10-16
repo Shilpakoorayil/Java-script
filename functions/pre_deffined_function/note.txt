@@ -1,0 +1,25 @@
+..........................PRE_DEFINED FUNCTIONS ..............................
+
+
+ *  Building function/ Native Methods
+ >  It are already provided by JS.
+ >  It will save time .
+ >  It will code readability
+ >  Optimize the code 
+
+       math function
+       Date time function
+
+
+
+       WORKS by using string
+       slice
+       Includes
+       concate
+       indexof
+       lastindexof
+       split
+       startwith
+       endwith
+       serach value of
+       

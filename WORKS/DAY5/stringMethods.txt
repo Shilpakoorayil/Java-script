@@ -1,0 +1,56 @@
+string methods
+
+slice
+
+includes
+concate
+indexOf
+lastIndexOf
+trim
+split
+startWith
+endWith
+search 
+valueOf
+
+
+1. Extracting String Parts:
+slice(start, end): Extracts a section of a string and returns it as a new string. end is optional and excludes the character at that index.
+substring(start, end): Similar to slice(), but handles negative arguments differently (treats them as 0).
+substr(start, length): Extracts a specified number of characters (length) from a starting position (start).
+charAt(index): Returns the character at a specific index.
+at(index): Returns the character at a specific index, supporting negative indices to count from the end of the string. 
+...............................................................................................................
+
+2. Searching and Replacing:
+indexOf(searchValue, fromIndex): Returns the index of the first occurrence of a specified value, or -1 if not found.
+lastIndexOf(searchValue, fromIndex): Returns the index of the last occurrence of a specified value. 
+includes(searchValue, fromIndex): Checks if a string contains a specified value and returns true or false.
+startsWith(searchValue, position): Checks if a string begins with a specified value.
+endsWith(searchValue, length): Checks if a string ends with a specified value.
+replace(pattern, replacement): Replaces the first occurrence of a pattern (string or regex) with a replacement string.
+replaceAll(pattern, replacement): Replaces all occurrences of a pattern with a replacement string.
+search(pattern): Searches for a match against a regular expression and returns the index of the first match, or -1.
+..................................................................................................................
+
+
+
+3. Modifying Case and Formatting:
+toUpperCase(): Converts the string to uppercase.
+toLowerCase(): Converts the string to lowercase.
+trim(): Removes whitespace from both ends of a string.
+trimStart(): Removes whitespace from the beginning of a string.
+trimEnd(): Removes whitespace from the end of a string.
+
+
+......................................................................................................................
+4. Combining and Splitting:
+concat(string1, string2, ...): Joins two or more strings.
+split(separator, limit): Splits a string into an array of substrings based on a separator.
+
+
+
+.........................................................................................................................
+5. Other Useful Methods:
+length: A property (not a method) that returns the length of the string.
+repeat(count): Returns a new string with the original string repeated a specified number of times.
