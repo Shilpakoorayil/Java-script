@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        #btn {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 45px 45px;
+            cursor: pointer;
+            border-radius: 10px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div>
+     <button id="btn"> BUTTON </button>
+    
+    <P id="paraContent"></P>
+</div>
+   
+
+    <script>
+       
+// event: A string representing the name of the event to listen for (e.g., 'click', 'mouseover', 'keydown', 'submit').
+
+
+        let button =document.getElementById("btn");
+         let paraContent =document.getElementById("paraContent");
+         
+        button.onclick=addEventListener("click",function(){
+            alert("HELLO SHILPA !");
+            button.style.background="red";
+             paraContent.textContent ="While clicking the buttonc";
+        })
+//   button.onclick=addEventListener("mouseover",function(){
+//             console.log("MOUSE HOVER METHOD");
+//             button.style.background="black";
+//         })
+
+button.onclick=addEventListener("keydown",function(){
+    alert("HELLO Madam, its KEYDOWN !");
+            button.style.background="grey";
+            paraContent.textContent ="You have done KEYDOWN method!"
+            paraContent.stye.background="green";
+})
+  button.onclick=addEventListener("submit",function(){
+            alert("HELLO nichu !");
+            button.style.background="pink";
+             paraContent.textContent ="HELLO";
+        })
+
+    </script>
+</body>
+
+</html>

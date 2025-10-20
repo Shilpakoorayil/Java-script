@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--Sing event   -->
+    <button id="btn">Click Me</button>
+
+    <script>
+        let button = document.getElementById("btn");
+        //Adding events (more flexible code)
+        button.addEventListener('click', function () {
+            alert("Button clicked using addevent listener")
+        });
+        //adding another event for same button
+        button.addEventListener('click', function () {
+            console.log("Another ");
+
+        });
+        button.addEventListener('mouseover', function () {
+            console.log('Mouse over another button!');
+
+        });
+        button.addEventListener('click', function () {
+            button.style.background = "red";
+            button.style.border = 'none';
+            button.style.color = "white";
+            button.style.width="500px";
+            button.style.height="500px";
+            button.style.display="flex";
+              button.style.justifyContent="center";
+                button.style.alignItems="center";
+                  button.style.font="1000px";
+                    button.style.marginLeft="300px";
+                    button.style.border ="none";
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

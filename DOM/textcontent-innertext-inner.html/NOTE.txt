@@ -1,4 +1,4 @@
-
+14/10/2015:
 ...................................................................
 Display None  :
 
@@ -9,3 +9,31 @@ Visibility Hidden :
 
 > When you want to hide an element but maintain its layout.
 ...................................................................
+ 
+16/10/2025 
+ EVENTS:
+  Action or occurance that happens to  the brower
+  Eg: Hover
+  * page loadinng
+  * form submission
+  * button clicking
+  * User typing in input fields
+  * mouse Hover
+
+  EVENT LISTENER :
+  > Function will wait till event take place.
+  > Function in  JS that wait for an event to occur own an html element.
+  and hence executes code in response.
+  USES: 
+  > To make the website interactive.
+  > Inorder to separate HTML and JS.(code clean)
+  >Dynamically add/remove behaviour during  run time
+
+
+  EVENT HANDLING: 
+  > Event Handling means writing JS code that will run when an specific event occur.
+
+ADD EVENT LISTENER:
+  > You can attach multiple handlers to the same EVENTS
+  > You can remove listeners latter if needed
+  > Cleaner and more flexible
