@@ -1,0 +1,4 @@
+note
+
+SEEKING EVENT :
+> Drag the progress bar to move the audio forward/backward.

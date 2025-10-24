@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <audio id="audioCanPlay" controls>
+        <source src="wrongfile.mpeg" type="audio/mpeg">
+    </audio>
+    <p id="message"></p>
+    <script>
+        const audioCanPlay = document.querySelector("audio source");
+        const message = document.querySelector("#message");
+
+
+        audioCanPlay.addEventListener("error", () => {
+            message.textContent = " Error in your audio file";
+        });
+    </script>
+</body>
+
+</html>

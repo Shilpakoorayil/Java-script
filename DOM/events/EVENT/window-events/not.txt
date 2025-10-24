@@ -1,0 +1,9 @@
+
+
+
+When a page is fully load :
+Home Work :
+Events:
+unload
+error
+pagehide

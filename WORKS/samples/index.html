@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+
+    <style>
+        .loginhead {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .interstitial-wrapper{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-success text-white" id="navBarId">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Logo</a> -->
+            <nav class="navbar bg-success">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <button type="button" class="btn btn-success" onclick="window.location.reload();">
+                            <img src="./OIP.jpeg" alt="Bootstrap" width="30" height="30">
+                        </button>
+
+                    </a>
+                </div>
+            </nav>
+
+
+            <!-- .......................................... -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- .............................. -->
+
+                <div class="offcanvas-body" id="status">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#carouselExampleIndicators">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="./contacts.html">Contacts</a>
+
+
+                        </li>
+                        <li class="nav-item">
+
+
+                            <!-- Button trigger modal ------------------->
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <img src="./WhatsApp Image 2025-10-05 at 7.38.10 PM.jpeg"
+                                    class="img-thumbnail border-0 " height="50px" width="50px">
+                            </button>
+                            <!-- button method ends---------- -->
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ......................................................................................................... -->
+
+
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo">Open modal for @mdo</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@fat">Open modal for @fat</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                    <img src="./SHILPA K copy.jpg" class="img-thumbnail" height="30px" width="30px"><br>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Email :</label>
+                            <input type="email" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Password :</label>
+                            <input type="password" class="form-control" id="message-text">
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">SAVE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    <!-- .............................................................................................................. -->
+
+
+    <!-- BODY -->
+   
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./Copy-of-Copy-of-How-to-donate-to-NGOs-and-Charities.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./E0nGJfpX0AE7b-l.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./Eradicate-hunger.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- cards....................................... -->
+
+
+    <div class="container-fluid mt-5" id="check">
+        <div class="row g-19">
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./E0nGJfpX0AE7b-l.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./nutrients-13-03199-ag.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./hunger-in-asia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./E0nGJfpX0AE7b-l.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./nutrients-13-03199-ag.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./nutrients-13-03199-ag.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./nutrients-13-03199-ag.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="./nutrients-13-03199-ag.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- ..................................Display none................. -->
+    <div id="main-frame-error" class="interstitial-wrapper">
+        <div>
+            <div class="icon icon-offline" style="visibility: hidden;"></div>
+            <div id="main-msg">
+                <h1><span>NO INTERNET</span></h1>
+                 <div id="offline-message">❌ You are offline! Please check your internet connection.</div>
+                 <div>
+                    <p>"Try"</p>
+                    <ul >
+                        <li>Checking the network cable,modem and router</li>
+                        <li>Reconnecting to Wifi</li>
+                        
+                    </ul>
+           
+                  </div>
+                    <video width="600" height="340"  style="border-radius: 50%; " controls autoplay>
+    <source src="./VID20230805175008.mp4" type="video/mp4">
+    <source src="./VID20230805175008.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- ............................................... -->
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white-50 text-center py-4" id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Login/User Status Column -->
+                <div class="col-md-4 mb-3 lg-2">
+                    <h5>Company Name</h5>
+                    <!-- Example: Show these links if the user is NOT logged in -->
+                    <ul class="list-unstyled">
+                        <li><a href="/login" class="text-white-50 text-decoration-none">L</a></li>
+                        <li><a href="/register" class="text-white-50 text-decoration-none">R</a></li>
+                    </ul>
+                    <!-- Example: Show these links if the user IS logged in -->
+                </div>
+                <div class="col-md-4 mb-3 lg-2">
+                    <ul class="list-unstyled">
+                        <li><a href="/profile" class="text-white-50 text-decoration-none">My Profile</a></li>
+                        <li><a href="/logout" class="text-white-50 text-decoration-none">Logout</a></li>
+                    </ul>
+
+
+                </div>
+
+
+
+                <!-- Navigation Column  -->
+                <div class="col-md-4 mb-3 lg-2">
+                    <h5>Products</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Copyright Column -->
+                <div class="col-md-4 mb-3 lg-2">
+                    <h5>Connect</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-twitter"></i>
+                                Twitter</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-facebook"></i>
+                                Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3 lg-2">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-twitter"></i>
+                                Twitter</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none"><i class="bi bi-facebook"></i>
+                                Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 lg-2">
+                <p class="mb-0">© 2025 Your Website. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+
+        // .............................................................................
+        const offlineMsg = document.getElementById('offline-message');
+        const offlineMsg1 = document.getElementById('check');
+        const mainFrameError = document.getElementById('main-frame-error');
+        const mainContent = document.getElementById('carouselExampleInterval');
+         const footer = document.getElementById('footer');
+         const navBarId = document.getElementById('navBarId');
+        
+   
+        
+        function checkNetwork() {
+            if (navigator.onLine) {
+                offlineMsg.style.display = 'none';
+                offlineMsg1.style.display = 'block';
+                mainFrameError.style.display='none'
+                
+                mainContent.style.display = 'block';
+                footer.style.display='block';
+                 navBarId.style.display='block';
+            } else {
+                alert("Sorry!! Please Check Your Internet Connection");
+                offlineMsg.style.display = 'block';
+                offlineMsg1.style.display = 'none';
+                  mainFrameError.style.display='block'
+                mainContent.style.display = 'none';
+                 footer.style.display='none';
+                  navBarId.style.display='none';
+            }
+        }
+
+        // Run once when page loads
+        checkNetwork();
+
+        // Listen for network changes
+        window.addEventListener('online', checkNetwork);
+        window.addEventListener('offline', checkNetwork);
+        //............................................................................
+    </script>
+</body>
+
+</html>

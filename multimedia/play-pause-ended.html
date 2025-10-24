@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multimedia</title>
+</head>
+
+<body>
+    <audio id="audioPlayer" controls autoplay>
+        <source src="./audio1.mpeg" type="audio/mpeg">
+    </audio>
+
+    <p id="eventOutput">Event will appear here</p>
+
+    <script>
+        const audio = document.getElementById("audioPlayer");
+        const output = document.getElementById("eventOutput");
+
+        //Play event
+        audio.addEventListener("play", () => {
+            output.textContent = "Play event fired";
+            console.log("Play event fired");
+
+        })
+        //pause event
+        audio.addEventListener("pause",()=>{
+            output.textContent='Paused event fired'
+        })
+
+        //audio event
+        audio.addEventListener('ended',()=>{
+            output.textContent='Ended event fired';
+        })
+    </script>
+</body>
+
+</html>

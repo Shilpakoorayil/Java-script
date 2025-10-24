@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <select id="selectedValue">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="pineapple">pineapple</option>
+    </select>
+    
+    <input type="text" id="inputvalue">
+    <p id ="selectItems"></p>
+<!-- ............................................................................. -->
+    <script>
+       const SelectedItem=document.getElementById("selectedValue");
+        const selectFormDisplay =document.getElementById("selectItems");
+        const inputvaluedisplay =document.getElementById("inputvalue");
+ 
+    SelectedItem.addEventListener('change', ()=>  {
+    //    const selectedInput = SelectedItem.value;
+    //    selectFormDisplay.textContent = `Your selected value is  ${selectedInput}`;//In case of variable
+    selectFormDisplay.textContent = "Your selected value is "  + SelectedItem.value;
+
+    })
+   
+
+    inputvaluedisplay.addEventListener('input' ,()=>{
+        selectFormDisplay.innerText="Typing.... " + inputvaluedisplay.value;
+        
+
+    })
+inputvaluedisplay.addEventListener('select',()=>{
+     selectFormDisplay.innerText="Your Selected value is " + inputvaluedisplay.value;
+    
+
+})
+
+    </script>
+</body>
+</html>

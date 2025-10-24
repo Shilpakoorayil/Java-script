@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <input type="text" placeholder="type something...">
+        <button type="submit">Submit</button>
+        <button type="reset" id="reset">Clear</button>
+
+    </form>
+    <p id="output"></p>
+    <script>
+        const form = document.getElementById("myForm");
+        const output = document.getElementById("output");
+        const clear = document.getElementById("clear");
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            // INORDER TO PREVENT UNWANTED REFRESH 
+            output.innerText = 'Form Submitted!';
+        })
+        //******************* Both methods are correct  **************************************8
+        // reset.addEventListener('click',(event)=>{
+
+        //        output.innerText=' ';
+        // })
+        //*************************************************************************************
+
+        form.addEventListener('reset', (event) => {
+
+            output.innerText = ' ';
+        })
+
+
+    </script>
+</body>
+
+</html>

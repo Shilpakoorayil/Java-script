@@ -1,0 +1,10 @@
+Form events:
+textarea
+input
+select,submit,
+
+HOME WORKS : 
+
+select event
+change event
+input event
