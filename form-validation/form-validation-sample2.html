@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+
+
+        input textarea {
+            display: block;
+            padding: 40px;
+            width: 450px;
+        }
+
+        .font {
+            color: red;
+            font-size: small;
+            display: flex;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        .main {
+
+
+            display: flex;
+            justify-content: center;
+
+        }
+
+        form {
+            height: auto;
+            padding: 30px;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+
+
+        .submit {
+            padding: 10px;
+            width: auto;
+            border-radius: 15px;
+            border: solid;
+        }
+
+        .error {
+            border-radius: 50px;
+            border: none;
+        }
+
+        .blue_div {
+            color: white;
+            height: auto;
+            width: 700px;
+            background-color: rgb(9, 9, 116);
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="blue_div">
+        <h2>SIMPLE CONTACT FORM</h2>
+        <div class="main">
+            <form onsubmit="return validationForm()">
+                <label for="firstName" class="font">FIRST NAME</label><br>
+                <input type="text" id="firstname" name="firstname" size="30"><br>
+                <span class="error" id="firstnameError"> </span><br><br>
+
+                <label for="lastName" class="font">LAST NAME</label><br>
+                <input type="text" id="lastname" name="lastname" size="30"><br>
+                <span class="error" id="lastnameError"> </span><br><br>
+                <!-- ........................................................................... -->
+
+                <label for="Email" class="font">EMAIL</label><br>
+                <input type="email" id="email" name=email size="30"><br>
+                <span class="error" id="emailError"></span><br><br>
+
+                <label for="Phone Number" class="font">PHONE NUMBER </label><br>
+                <input type="text" id="phone" name="phone" size="30"><br>
+                <span class="error" id="phonrError"></span><br><br>
+
+                <!-- ................................................... -->
+                <label for="city" class="font">CITY</label><br>
+                <input type="text" id="city" name="city" size="30"><br>
+                <span class="error" id="cityError"> </span><br><br>
+                <!-- ......................................... -->
+                <label for="message" class="font">MESSAGE</label><br>
+                <textarea id="message" name="message" rows="5" cols="30"
+                    placeholder="Enter your message here..."></textarea><br>
+                <span class="error" id="messageError"> </span><br><br>
+
+
+                <button type="submit" class="submit">Submit</button>
+        </div>
+
+    </div>
+    <script>
+        function validationForm() {
+
+
+            //clear previous error
+            document.getElementById("firstnameError").innerText = "";
+            document.getElementById("lastnameError").innerText = "";
+            //  .......................................................
+            document.getElementById("emailError").innerText = "";
+            document.getElementById("phonrError").innerText = "";
+            document.getElementById("cityError").innerText = "";
+            document.getElementById("messageError").innerText = "";
+
+
+            let isvalid = true;
+
+            // validating first name and last name
+            const firstName = document.getElementById("firstname").value.trim();
+            if (firstName === "") {
+                document.getElementById("firstnameError").innerText = "First name is required";
+                isValid = false;
+            }
+            const lastName = document.getElementById("lastname").value.trim();
+            if (lastName === "") {
+                document.getElementById("lastnameError").innerText = "Last name is required";
+                isValid = false;
+            }
+            // .........................................
+
+            //email VALIDATION
+
+            const email = document.getElementById("email").value.trim();
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById("emailError").innerText = "Invalid Email format";
+                isValid = false;
+            }
+            //phone validation
+            const phone = document.getElementById("phone").value.trim();
+            const phonePattern = /^\d{10}$/;
+
+            if (!phonePattern.test(phone)) {
+                document.getElementById("phonrError").innerText = "Invalid phone number";
+                isValid = false;
+            }
+            //city
+            const city = document.getElementById("city").value.trim();
+            if (city === "") {
+                document.getElementById("cityError").innerText = "City is required";
+                isValid = false;
+            }
+            //message
+            const message = document.getElementById("message").value.trim();
+            if (message === "") {
+                document.getElementById("messageError").innerText = "Message is required";
+                isValid = false;
+            }
+
+
+
+            return isValid;
+
+        }
+    </script>
+
+    </form>
+</body>
+
+</html>

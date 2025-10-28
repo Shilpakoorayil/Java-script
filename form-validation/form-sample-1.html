@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        height: 100vh;
+
+        input {
+            display: block;
+            margin: 10px 15px;
+            padding: 8px;
+            width: 300px;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    }
+
+    .main {
+
+        height: 500px;
+        width: 350px;
+        margin: 100px 150px;
+        border-radius: 35px;
+        border: solid;
+        background-color: white;
+    }
+
+    .submit {
+        padding: 10px;
+        width: auto;
+        border-radius: 15px;
+        border: solid;
+    }
+
+    .error {
+        border-radius: 50px;
+        border: none;
+    }
+    .blue_div{
+   height: 700px;
+   width:700px;
+   border-radius: 35px;
+   border: solid 2px;
+   margin: 90px 10px;
+   background-color: rgb(9, 9, 116);
+
+    }
+
+</style>
+
+<body>
+    <div class="blue_div">
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form onsubmit="return validationForm()">
+            <label for="Name" style="color: red;">Name</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError"> </span><br><br>
+
+
+            <label for="Email"  style="color: red;">Email</label>
+            <input type="email0" id="email" name=email>
+            <span class="error" id="emailError"></span><br><br>
+
+            <label for="Phone Number"  style="color: red;">Phone Number </label>
+            <input type="text" id="phone" name="phone">
+            <span class="error" id="phonrError"></span><br><br>
+
+            <button type="submit" class="submit">Submit</button>
+    </div>
+    </div>
+    <script>
+        function validationForm() {
+
+
+            //clear previous error
+            document.getElementById("nameError").innerText = "";
+            document.getElementById("emailError").innerText = "";
+            document.getElementById("phonrError").innerText = "";
+            let isvalid = true;
+
+            // validating 
+            const name = document.getElementById("name").value.trim();
+            if (name === "") {
+                document.getElementById("nameError").innerText = "Name is required";
+                isValid = false;
+            }
+
+            //email VALIDATION
+
+            const email = document.getElementById("email").value.trim();
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById("emailError").innerText = "Invalid Email format";
+                isValid = false;
+            }
+
+
+            //phone validation
+            const phone = document.getElementById("phone").value.trim();
+            const phonePattern = /^\d{10}$/;
+
+            if (!phonePattern.test(phone)) {
+                document.getElementById("phonrError").innerText = "Invalid phone number";
+                isValid = false;
+            }
+
+            return isValid;
+
+        }
+    </script>
+
+    </form>
+</body>
+
+</html>
